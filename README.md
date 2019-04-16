@@ -9,13 +9,13 @@
 
 ## Background
 
-I was tired to copy the URL of pages to paste it in [Sci-Hub](https://en.wikipedia.org/wiki/Sci-Hub) website 100 times per hours when I'm reading scientific papers. 
+I was tired to copy the URL of pages to paste it in [Sci-Hub](https://en.wikipedia.org/wiki/Sci-Hub) website 100 times per hours when I was reading scientific papers. 
 
 So I've created a very simple button addon for [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/) which do it all for me.
 
 ## How to use
 
-Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-Hub_ button, and Sci-Hub will pop with your PDF on another tab 😀
+Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-Hub_ button, and Sci-Hub will pop up with your PDF on another tab 😀
 
 
 ## Built With
