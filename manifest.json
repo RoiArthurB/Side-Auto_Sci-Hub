@@ -1,0 +1,22 @@
+{
+	"manifest_version":2,
+	"name": "Auto Sci-Hub",
+	"version": "1.0",
+
+	"description": "Auto-modify the url to load Sci-Hub page with your article",
+
+	"permissions": [
+		"tabs"
+	],
+
+	"background": {
+		"scripts": ["shRedirect.js"]
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"48": "icons/48-raven.jpg",
+			"96": "icons/96-raven.jpg"
+		}
+	}
+}		
