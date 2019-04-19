@@ -1,13 +1,31 @@
-function logTabs(tabs) {
+/*
+ *	GLOBAL VAR
+ */
+
+baseURL = "https://whereisscihub.now.sh/go/";
+
+function logTabs(tabs, nav = false) {
+
+	// Diff beetween Chrome / Firefox ...
+	if(nav){
+		brw = chrome;
+	}else{
+		brw = browser;
+	}
+
 	for (let tab of tabs) {
 		if ( tab.active ){
-			browser.tabs.create({
-				url: "https://whereisscihub.now.sh/go/"+tab.url
+			brw.tabs.create({
+				url: baseURL + tab.url
 			});
-			console.log(tab);
+			//console.log(tab);
 		}
 	}
 }
+
+/*
+ *	FIREFOX
+ */
 
 function onError(error) {
 	console.log(`Error: ${error}`);
@@ -18,4 +36,19 @@ function startQuery() {
 	querying.then(logTabs, onError);
 }
 
-browser.browserAction.onClicked.addListener( startQuery );
+/*
+ *	EVENT LISTENER
+ */
+
+if(chrome){
+	// Listener
+	chrome.browserAction.onClicked.addListener(function(tab) {
+		// Query current tab
+		chrome.tabs.query(
+			{active: true, currentWindow: true},
+			(arrayOfTabs) => { logTabs(arrayOfTabs, true) }
+		);
+	});
+}else{
+	browser.browserAction.onClicked.addListener( startQuery );
+}
