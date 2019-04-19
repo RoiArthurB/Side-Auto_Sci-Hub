@@ -5,7 +5,13 @@
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
 
+[![Available on addons.mozilla.org](https://cdn-images-1.medium.com/max/1200/1*gbwMHf0PfoFJAPmL3L4Vrg.png)](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
+
 [Available on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
+
+[![Available on chrome.google.com](https://cdn-images-1.medium.com/max/1200/1*p6zIz5nn0myk2bpyqb6mjQ.png)](https://chrome.google.com/webstore/detail/auto-sci-hub/nlogbpfgpkffmombiknfdoogphkimmmd/related?hl=en-US&authuser=0)
+
+[Available on chrome.google.com](https://chrome.google.com/webstore/detail/auto-sci-hub/nlogbpfgpkffmombiknfdoogphkimmmd/related?hl=en-US&authuser=0)
 
 ## Background
 
@@ -31,6 +37,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
+PS: If the plugin is not available on markets anymore, it must be due to the fact that it doesn't respect Market Policy, so build it from source (it's a very simple plugin based on JS API, so it should work on any browser version) and enjoy the plugin ! 😀😀
+
+PPS: If you love Sci-Hub too, support the project by sending a contribution to the Sci-Hub Bitcoin address: ***1K4t2vSBSS2xFjZ6PofYnbgZewjeqbG1TM***
+
+<!-- I hate you my friends, I had to do it... 
+
 PS: I'm not using Chrome nor Chromium, and I'm too lazy to take a look on development for that software... So consider switching to Firefox 🦊
 
 PPS: If you're not as lazy as I am, feel free to send it to me in a pull request ^^
+-->
