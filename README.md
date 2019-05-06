@@ -1,17 +1,13 @@
 # Auto Sci-Hub ![Sci-Hub Logo](https://addons.cdn.mozilla.net/user-media/addon_icons/1484/1484272-64.png?modified=8be14e85)
 
-[![Language](http://img.shields.io/badge/language-JavaScript-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Language](https://img.shields.io/badge/language-JavaScript-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![GitHub](https://img.shields.io/github/license/RoiArthurB/Side-Auto_Sci-Hub.svg) 
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
 
 [![Available on addons.mozilla.org](https://cdn-images-1.medium.com/max/1200/1*gbwMHf0PfoFJAPmL3L4Vrg.png)](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
 
-[Available on addons.mozilla.org](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
-
 [![Available on chrome.google.com](https://cdn-images-1.medium.com/max/1200/1*p6zIz5nn0myk2bpyqb6mjQ.png)](https://chrome.google.com/webstore/detail/auto-sci-hub/nlogbpfgpkffmombiknfdoogphkimmmd/related?hl=en-US&authuser=0)
-
-[Available on chrome.google.com](https://chrome.google.com/webstore/detail/auto-sci-hub/nlogbpfgpkffmombiknfdoogphkimmmd/related?hl=en-US&authuser=0)
 
 ## Background
 
