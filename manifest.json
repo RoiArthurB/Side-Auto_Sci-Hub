@@ -13,10 +13,12 @@
 		"scripts": ["shRedirect.js"]
 	},
 
-	"browser_action": {
+	"page_action": {
 		"default_icon": {
 			"48": "icons/48-raven.jpg",
 			"96": "icons/96-raven.jpg"
-		}
+        },
+        "show_matches": ["<all_urls>"],
+        "default_title": "Open in Sci-hub"
 	}
-}		
+}
