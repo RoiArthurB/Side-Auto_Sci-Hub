@@ -16,9 +16,9 @@ function logTabs(tabs, nav = false) {
 	for (let tab of tabs) {
 		if ( tab.active ){
 			brw.tabs.create({
-				url: baseURL + tab.url
+				url: baseURL + escape(tab.url)
 			});
-			//console.log(tab);
+			console.log(tab);
 		}
 	}
 }
