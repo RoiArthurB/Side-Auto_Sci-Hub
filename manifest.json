@@ -1,7 +1,7 @@
 {
 	"manifest_version":2,
 	"name": "Auto Sci-Hub",
-	"version": "1.1",
+	"version": "1.2",
 
 	"description": "Auto-modify the url to load Sci-Hub page with your article",
 
@@ -13,13 +13,17 @@
 		"scripts": ["shRedirect.js"]
 	},
 
-	"browser_action": {
-        "default_icon": {
-            "16": "icons/icon.svg",
-            "19": "icons/icon.svg",
-            "24": "icons/icon.svg",
-            "32": "icons/icon.svg",
-            "38": "icons/icon.svg"
-      }
+	"page_action": {
+		"default_icon": {
+      "16": "icons/icon.svg",
+      "19": "icons/icon.svg",
+      "24": "icons/icon.svg",
+      "32": "icons/icon.svg",
+      "38": "icons/icon.svg",
+			"48": "icons/icon.svg",
+			"96": "icons/icon.svg"
+    },
+    "show_matches": ["<all_urls>"],
+    "default_title": "Open in Sci-hub"
 	}
 }
