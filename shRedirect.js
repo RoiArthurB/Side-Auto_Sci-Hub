@@ -42,7 +42,7 @@ function startQuery() {
 
 if(chrome){
 	// Listener
-	chrome.browserAction.onClicked.addListener(function(tab) {
+	chrome.pageAction.onClicked.addListener(function(tab) {
 		// Query current tab
 		chrome.tabs.query(
 			{active: true, currentWindow: true},
@@ -50,5 +50,5 @@ if(chrome){
 		);
 	});
 }else{
-	browser.browserAction.onClicked.addListener( startQuery );
+	browser.pageAction.onClicked.addListener( startQuery );
 }
