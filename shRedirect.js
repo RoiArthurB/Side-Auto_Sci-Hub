@@ -2,53 +2,37 @@
  *	GLOBAL VAR
  */
 
-baseURL = "https://whereisscihub.now.sh/go/";
+var baseURL = "https://whereisscihub.now.sh/go/";
 
-function logTabs(tabs, nav = false) {
+// Firefox always has both chrome and browser objects, Chrome has only chrome
+var browser = browser || chrome
 
-	// Diff beetween Chrome / Firefox ...
-	if(nav){
-		brw = chrome;
-	}else{
-		brw = browser;
-	}
-
-	for (let tab of tabs) {
-		if ( tab.active ){
-			brw.tabs.create({
-				url: baseURL + escape(tab.url)
-			});
-			console.log(tab);
-		}
-	}
-}
-
-/*
- *	FIREFOX
- */
-
-function onError(error) {
-	console.log(`Error: ${error}`);
-}
-
-function startQuery() {
-	var querying = browser.tabs.query({currentWindow: true, active: true});
-	querying.then(logTabs, onError);
+function logTabs(tab) {
+    if ( tab.active ){
+        browser.tabs.create({
+            url: baseURL + escape(tab.url)
+        });
+        console.log(tab);
+    }
 }
 
 /*
  *	EVENT LISTENER
  */
 
-if(chrome){
-	// Listener
-	chrome.pageAction.onClicked.addListener(function(tab) {
-		// Query current tab
-		chrome.tabs.query(
-			{active: true, currentWindow: true},
-			(arrayOfTabs) => { logTabs(arrayOfTabs, true) }
-		);
-	});
-}else{
-	browser.pageAction.onClicked.addListener( startQuery );
-}
+// Listener
+browser.pageAction.onClicked.addListener(function(tab) { logTabs(tab) });
+
+function checkForValidUrl(tabId, changeInfo, tab)
+    {
+        if(typeof tab != "undefined" && typeof tab != "null" )
+        {
+                // ... show the page action.
+                browser.pageAction.show(tabId);
+        }
+    };
+
+// Listen for any changes to the URL of any tab.
+// Since Chrome does'nt support hide_match or show_match
+browser.tabs.onUpdated.addListener(checkForValidUrl);
+browser.tabs.onActivated.addListener(checkForValidUrl);
