@@ -6,7 +6,7 @@
     "description": "Auto-modify the url to load Sci-Hub page with your article",
 
     "permissions": [
-        "tabs"
+        "activeTab"
     ],
 
     "background": {
