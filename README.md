@@ -26,6 +26,7 @@ Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-H
 ## Authors
 
 * **Arthur Brugiere** - *Initial work* - [RoiArthurB](https://github.com/RoiArthurB)
+* **Giacomo Rossetto** - *Upgraded almost everything* - [Jackymancs4](https://github.com/Jackymancs4)
 
 ## License
 
