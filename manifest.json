@@ -12,7 +12,14 @@
 	"background": {
 		"scripts": ["shRedirect.js"]
 	},
-
+    "icons": {
+        "16": "assets/logo.svg",
+        "24": "assets/logo.svg",
+        "32": "assets/logo.svg",
+        "64": "assets/logo.svg",
+        "128": "assets/logo.svg",
+        "256": "assets/logo.svg"
+    },
 	"page_action": {
 		"default_icon": {
       "16": "icons/icon.svg",
