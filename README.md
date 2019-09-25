@@ -1,4 +1,4 @@
-# Auto Sci-Hub ![Sci-Hub Logo](https://addons.cdn.mozilla.net/user-media/addon_icons/1484/1484272-64.png?modified=8be14e85)
+# Auto Sci-Hub ![Sci-Hub Logo](https://user-images.githubusercontent.com/6209647/65463219-b9aaa480-de57-11e9-96e8-d5f7fff34f6d.png)
 
 [![Language](https://img.shields.io/badge/language-JavaScript-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![GitHub](https://img.shields.io/github/license/RoiArthurB/Side-Auto_Sci-Hub.svg) 
