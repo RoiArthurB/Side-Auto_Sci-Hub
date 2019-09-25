@@ -12,13 +12,25 @@
 	"background": {
 		"scripts": ["shRedirect.js"]
 	},
-
+    "icons": {
+        "16": "assets/logo.svg",
+        "24": "assets/logo.svg",
+        "32": "assets/logo.svg",
+        "64": "assets/logo.svg",
+        "128": "assets/logo.svg",
+        "256": "assets/logo.svg"
+    },
 	"page_action": {
 		"default_icon": {
-			"48": "icons/48-raven.jpg",
-			"96": "icons/96-raven.jpg"
-        },
-        "show_matches": ["<all_urls>"],
-        "default_title": "Open in Sci-hub"
+      "16": "icons/icon.svg",
+      "19": "icons/icon.svg",
+      "24": "icons/icon.svg",
+      "32": "icons/icon.svg",
+      "38": "icons/icon.svg",
+			"48": "icons/icon.svg",
+			"96": "icons/icon.svg"
+    },
+    "show_matches": ["<all_urls>"],
+    "default_title": "Open in Sci-hub"
 	}
 }
