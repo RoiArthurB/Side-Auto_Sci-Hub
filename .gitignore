@@ -1,4 +1,4 @@
 # Github Pages
 _config.yml
-.github/
-.github/*
+.github/ISSUE_TEMPLATE/
+.github/ISSUE_TEMPLATE/*
