@@ -1,0 +1,30 @@
+name: Publish Addon Action
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      # Package the plugin
+      - run: echo '🔥 Starting Zipping'
+      - run: zip AutoSciHubAuto.zip assets/ icons/ manifest.json shRedirect.js
+      # Upload on Firefox
+      - uses: trmcnvn/firefox-addon@v1
+        with:
+          uuid: '{be4c6348-e64f-4ff9-9e48-47468de8aa64}'
+          xpi: AutoSciHubAuto.zip
+          manifest: manifest.json
+          api-key: ${{ secrets.FIREFOX_API_KEY }}
+          api-secret: ${{ secrets.FIREFOX_API_SECRET }}
+        continue-on-error: true
+      # Upload on Google
+      - uses: trmcnvn/chrome-addon@v1
+        with:
+          extension: nlogbpfgpkffmombiknfdoogphkimmmd
+          zip: AutoSciHubAuto.zip
+          client-id: ${{ secrets.CHROME_CLIENT_ID }}
+          client-secret: ${{ secrets.CHROME_CLIENT_SECRET }}
+          refresh-token: ${{ secrets.CHROME_REFRESH_TOKEN }}
+        continue-on-error: true
