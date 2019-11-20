@@ -1,5 +1,10 @@
 name: Publish Addon Action
 
+on:
+  push:
+    branches:
+      - release
+
 jobs:
 
   build:
