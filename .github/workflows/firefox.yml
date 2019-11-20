@@ -1,0 +1,2 @@
+- name: Firefox Addon Action
+  uses: trmcnvn/firefox-addon@v1
