@@ -6,15 +6,13 @@ on:
       - release
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
 
     steps:
       # Package the plugin
-      - run: echo '🔥 Starting Zipping'
-      - run: zip AutoSciHubAuto.zip assets/ icons/ manifest.json shRedirect.js
+      - name: 🔥 Starting Zipping
+        run: zip AutoSciHubAuto.zip assets/ icons/ manifest.json shRedirect.js
       # Upload on Firefox
       - uses: trmcnvn/firefox-addon@v1
         with:
@@ -24,7 +22,7 @@ jobs:
           api-key: ${{ secrets.FIREFOX_API_KEY }}
           api-secret: ${{ secrets.FIREFOX_API_SECRET }}
         continue-on-error: true
-      # Upload on Google
+      # Upload on Chrome Store
       - uses: trmcnvn/chrome-addon@v1
         with:
           extension: nlogbpfgpkffmombiknfdoogphkimmmd
