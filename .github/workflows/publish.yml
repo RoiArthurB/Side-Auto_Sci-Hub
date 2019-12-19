@@ -10,9 +10,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Debug
+      - name: Where am I ? 🧐
+        run: ls -la ./
       # Package the plugin
       - name: 🔥 Starting Zipping
-        run: zip AutoSciHubAuto.zip assets/ icons/ manifest.json shRedirect.js
+        run: zip AutoSciHubAuto.zip ./assets/* ./icons/* ./manifest.json ./shRedirect.js
       # Upload on Firefox
       - uses: trmcnvn/firefox-addon@v1
         with:
