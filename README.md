@@ -15,10 +15,31 @@ I was tired to copy the URL of pages to paste it in [Sci-Hub](https://en.wikiped
 
 So I've created a very simple button addon for [Mozilla Firefox](https://www.mozilla.org/en-US/firefox/) which do it all for me.
 
+## Installing
+
+This part will explain you how to load the plugin in developper mode. I would recommand you to prefer installing the plugin from the official stores (with links above).
+
+### Firefox
+
+<!-- https://blog.mozilla.org/addons/2015/12/23/loading-temporary-add-ons/ -->
+
+Open the debug page on the addon section
+
+```
+about:debugging#addons
+``` 
+
+> Depending on your version of Firefox, this link may redirect you somewhere else. e.g. Ff 71 => `about:debugging#/runtime/this-firefox`
+
+From that webpage, press the bug button **Load Temporary Addon-On...** and choose the _manifest.json_.
+
+### Chrome/Chromium
+
+IDK
+
 ## How to use
 
 Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-Hub_ button, and Sci-Hub will pop up with your PDF on another tab 😀
-
 
 ## Built With
 * [Where Is Sci-Hub Now ?](https://whereisscihub.now.sh/) - List several alternative working links to active Sci-Hub mirrors
