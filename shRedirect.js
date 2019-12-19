@@ -10,7 +10,8 @@ var browser = browser || chrome
 function openSciHubTab(tab) {
     if ( tab.active ){
         browser.tabs.create({
-            url: baseURL + escape(tab.url)
+            url: baseURL + escape(tab.url),
+            index: tab.index + 1
         });
     }
 }
