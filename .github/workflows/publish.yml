@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Get sources
+      - uses: actions/checkout@v1
       # Debug
       - name: Where am I ? 🧐
         run: ls -la ./
