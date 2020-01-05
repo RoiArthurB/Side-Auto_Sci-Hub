@@ -7,7 +7,11 @@
 
 [![Available on addons.mozilla.org](https://cdn-images-1.medium.com/max/1200/1*gbwMHf0PfoFJAPmL3L4Vrg.png)](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
 
-[![Available on chrome.google.com](https://cdn-images-1.medium.com/max/1200/1*p6zIz5nn0myk2bpyqb6mjQ.png)](https://chrome.google.com/webstore/detail/auto-sci-hub/nlogbpfgpkffmombiknfdoogphkimmmd/related?hl=en-US&authuser=0)
+[~~Available on chrome.google.com~~](https://chrome.google.com/webstore/detail/auto-sci-hub/nlogbpfgpkffmombiknfdoogphkimmmd/related?hl=en-US&authuser=0) 
+
+> Don't respect Google's rules 😒
+>
+> _We do not authorize products or services that facilitate unauthorized access to content on websites, such as circumventing paywalls or login restrictions._
 
 ## Background
 
@@ -35,7 +39,17 @@ From that webpage, press the bug button **Load Temporary Addon-On...** and choos
 
 ### Chrome/Chromium
 
-IDK
+IDK the way to, but the plugin is working on it (because it's using the very raw functions of any browser If you want to complete that part, feel free to PR it 😉
+
+Also, as written above, the plugin is not (and will never be) on the chrome store because it doesn't respect [it's policy](https://developer.chrome.com/webstore/program_policies#content_policies)
+
+> Prohibited Products:
+>
+>   We don't allow products or services that:
+>
+>    * __Facilitate unauthorized access to content on websites, such as circumventing paywalls or login restrictions__
+>    * Encourage, facilitate, or enable the unauthorized access, download, or streaming of copyrighted content or media
+>    * Mine cryptocurrency
 
 ## How to use
 
@@ -59,9 +73,4 @@ PS: If the plugin is not available on markets anymore, it must be due to the fac
 
 PPS: If you love Sci-Hub too, support the project by sending a contribution to the Sci-Hub Bitcoin address: ***1K4t2vSBSS2xFjZ6PofYnbgZewjeqbG1TM***
 
-<!-- I hate you my friends, I had to do it... 
-
-PS: I'm not using Chrome nor Chromium, and I'm too lazy to take a look on development for that software... So consider switching to Firefox 🦊
-
-PPS: If you're not as lazy as I am, feel free to send it to me in a pull request ^^
--->
+PPPS: If it's too complicated to install the plugin on Chrome/ium, consider switching to Firefox 🦊
