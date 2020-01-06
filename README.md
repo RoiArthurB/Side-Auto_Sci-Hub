@@ -3,7 +3,7 @@
 [![Language](https://img.shields.io/badge/language-JavaScript-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![GitHub](https://img.shields.io/github/license/RoiArthurB/Side-Auto_Sci-Hub.svg) 
 
-![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
+![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)
 
 [![Available on addons.mozilla.org](https://cdn-images-1.medium.com/max/1200/1*gbwMHf0PfoFJAPmL3L4Vrg.png)](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
 
@@ -39,7 +39,7 @@ From that webpage, press the bug button **Load Temporary Addon-On...** and choos
 
 ### Chrome/Chromium
 
-IDK the way to, but the plugin is working on it (because it's using the very raw functions of any browser If you want to complete that part, feel free to PR it 😉
+IDK the way to, but the plugin is working on it (because it's using the very raw functions of any browser If you want to complete that part, feel free to PR it /2020😉
 
 Also, as written above, the plugin is not (and will never be) on the chrome store because it doesn't respect [it's policy](https://developer.chrome.com/webstore/program_policies#content_policies)
 
