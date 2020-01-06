@@ -55,6 +55,11 @@ Also, as written above, the plugin is not (and will never be) on the chrome stor
 
 Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-Hub_ button, and Sci-Hub will pop up with your PDF on another tab 😀
 
+
+Before | After
+--- | ---
+![Before screen](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/before.jpg) | ![After screen](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/after.jpg)
+
 ## Built With
 * [Where Is Sci-Hub Now ?](https://whereisscihub.now.sh/) - List several alternative working links to active Sci-Hub mirrors
 
@@ -65,7 +70,7 @@ Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-H
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL 3 License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
