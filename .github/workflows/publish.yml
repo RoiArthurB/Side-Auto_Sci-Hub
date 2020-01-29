@@ -20,7 +20,7 @@ jobs:
         run: ls -la ./
       # Package the plugin
       - name: 🔥 Starting Zipping
-        run: zip AutoSciHubAuto.zip ./assets/* ./icons/* ./manifest.json ./shRedirect.js
+        run: zip AutoSciHubAuto.zip ./assets/* ./icons/* ./manifest.json ./shRedirect.js ./options.html
       # Upload on Firefox
       - uses: trmcnvn/firefox-addon@v1
         with:
