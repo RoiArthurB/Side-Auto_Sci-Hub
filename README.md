@@ -63,6 +63,8 @@ Before | After
 ## Built With
 * [Where Is Sci-Hub Now ?](https://whereisscihub.now.sh/) - List several alternative working links to active Sci-Hub mirrors
 
+> FYI - The plugin currently use a fork fixed of the official WhereIsSciHub, _Vinni_ (the author of that tool) can't update his version now so I'm using [a fork](https://gitlab.com/Flockademic/whereisscihub/-/merge_requests/4) to have a working plugin ! :D 
+
 ## Authors
 
 * **Arthur Brugiere** - *Initial work* - [RoiArthurB](https://github.com/RoiArthurB)
