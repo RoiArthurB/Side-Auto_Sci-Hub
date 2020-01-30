@@ -6,7 +6,8 @@
     "description": "Auto-modify the url to load Sci-Hub page with your article",
 
     "permissions": [
-        "activeTab"
+        "activeTab",
+        "contextMenus"
     ],
     "options_ui": {
       "page": "options.html",
