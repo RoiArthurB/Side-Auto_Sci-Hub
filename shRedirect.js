@@ -3,9 +3,10 @@
  */
 
 // Prepare default value in case no new has been saved
-const BASE_URL = "https://whereisscihub.now.sh/go/";
+const STORAGE_KEY = "ASH-baseUrl";
+const DEFAULT_URL = "https://whereisscihub.now.sh/go/";
 let config = {};
-config["ASH-baseUrl"] = BASE_URL;
+config[STORAGE_KEY] = DEFAULT_URL;
 
 // Firefox always has both chrome and browser objects, Chrome has only chrome
 var browser = browser || chrome;
@@ -13,9 +14,9 @@ let storage = browser.storage.local;
 
 function openSciHubTab(tab, url) {
     if (tab.active) {
-        storage.get({"ASH-baseUrl": BASE_URL}, function (config) {
+        storage.get(config, function (config) {
             browser.tabs.create({
-                url: config["ASH-baseUrl"] + url,
+                url: config[STORAGE_KEY] + url,
                 index: tab.index + 1
             });
         });
