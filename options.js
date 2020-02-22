@@ -1,7 +1,10 @@
 /*
- * Code based on a copy-paste from https://github.com/bekicot/scihub-firefox/blob/6cb5e3d9294a01c28cf18ae052b8d5f68e4d6e99/options.js
+ * Code freely based on https://github.com/bekicot/scihub-firefox/blob/6cb5e3d9294a01c28cf18ae052b8d5f68e4d6e99/options.js
  * Love you @bekicot <3
+ * 
+ * By: @RoiArthurB
  */
+
 const SCIHUB_URL = 'ASH-baseUrl';
 const DEFAULT_SCIHUB_URL = 'https://whereisscihub.now.sh/go/';
 

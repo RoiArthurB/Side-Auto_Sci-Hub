@@ -9,21 +9,23 @@
     <form id="ASH-form" onsubmit="return validateForm()" >
       <label>Redirect Base URL</label>
       <input type="url" id="defaultUrl" name="defaultUrl" placeholder="https://whereisscihub.now.sh/go/" style="width:75%" />
+      
       <div for="defaultUrl" id="defaultUrlError" style="display: none">
         <label for="defaultUrl" style="color: red;">Invalid hostname.</label>
         <p>
-          The value is not a valid url. Maybe try a scihub mirror or another instance of <a href="https://gitlab.com/Flockademic/whereisscihub">WhereIsSciHub</a> like :
+          The value is not a valid url. Maybe try a scihub mirror or another instance of <a href="https://gitlab.com/Flockademic/whereisscihub">WhereIsSciHub</a> like:
           <ul>
             <li>https://sci-hub.se/</li>
             <li>https://whereisscihub-rf7h2bfl8.now.sh/go/</li>
           </ul>
-          You can also get the fetched scihub url on <a href="https://www.wikidata.org/wiki/Q21980377">Wikidata</a>
+          You can also get a scihub url from where WISH fetch them: <a href="https://www.wikidata.org/wiki/Q21980377">on Wikidata</a>
         </p>
         <p>
         If you think this is a valid url, please open an issue/bug report at:<br />
           <a href="https://github.com/RoiArthurB/Side-Auto_Sci-Hub/issues">https://github.com/RoiArthurB/Side-Auto_Sci-Hub/issues</a>
         </p>
       </div>
+      
       <label for="defaultUrl" id="defaultUrlSaved" style="color: green; display: none;">Saved new default URL</label>
 
     </form>

@@ -2,17 +2,22 @@
  *  GLOBAL VAR
  */
 
-// const BASE_URL = "https://whereisscihub.now.sh/go/";
-const BASE_URL = "https://whereisscihub-rf7h2bfl8.now.sh/go/";
+// Prepare default value in case no new has been saved
+const BASE_URL = "https://whereisscihub.now.sh/go/";
+let config = {};
+config["ASH-baseUrl"] = BASE_URL;
 
 // Firefox always has both chrome and browser objects, Chrome has only chrome
-var browser = browser || chrome
+var browser = browser || chrome;
+let storage = browser.storage.local;
 
 function openSciHubTab(tab, url) {
     if (tab.active) {
-        browser.tabs.create({
-            url: BASE_URL + url,
-            index: tab.index + 1
+        storage.get({"ASH-baseUrl": BASE_URL}, function (config) {
+            browser.tabs.create({
+                url: config["ASH-baseUrl"] + url,
+                index: tab.index + 1
+            });
         });
     }
 }
