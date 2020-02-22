@@ -2,16 +2,23 @@
  *  GLOBAL VAR
  */
 
-var baseURL = "https://whereisscihub.now.sh/go/";
+// Prepare default value in case no new has been saved
+const STORAGE_KEY = "ASH-baseUrl";
+const DEFAULT_URL = "https://whereisscihub.now.sh/go/";
+let config = {};
+config[STORAGE_KEY] = DEFAULT_URL;
 
 // Firefox always has both chrome and browser objects, Chrome has only chrome
-var browser = browser || chrome
+var browser = browser || chrome;
+let storage = browser.storage.local;
 
-function openSciHubTab(tab) {
-    if ( tab.active ){
-        browser.tabs.create({
-            url: baseURL + escape(tab.url),
-            index: tab.index + 1
+function openSciHubTab(tab, url) {
+    if (tab.active) {
+        storage.get(config, function (config) {
+            browser.tabs.create({
+                url: config[STORAGE_KEY] + url,
+                index: tab.index + 1
+            });
         });
     }
 }
@@ -20,5 +27,26 @@ function openSciHubTab(tab) {
  *  EVENT LISTENER
  */
 
-// Listener
-browser.browserAction.onClicked.addListener(function(tab) { openSciHubTab(tab) });
+// browserAction listener
+browser.browserAction.onClicked.addListener(function (tab) { openSciHubTab(tab, tab.url) });
+
+/**
+ * Add context menu to save page.
+ * Docs: https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/ContextMenus/create
+ */
+browser.contextMenus.create({
+    id: 'openscihubtab-page',
+    contexts: ['page'],
+    title: 'Open page in Sci-hub',
+    onclick: function (info, tab) { openSciHubTab(tab, info.pageUrl) }
+});
+
+/**
+ * Add context menu to save a selected link.
+ */
+browser.contextMenus.create({
+    id: 'openscihubtab-link',
+    contexts: ['link'],
+    title: 'Open link in Sci-hub',
+    onclick: function (info, tab) { openSciHubTab(tab, info.linkUrl) }
+});

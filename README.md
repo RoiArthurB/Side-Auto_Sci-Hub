@@ -3,7 +3,7 @@
 [![Language](https://img.shields.io/badge/language-JavaScript-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![GitHub](https://img.shields.io/github/license/RoiArthurB/Side-Auto_Sci-Hub.svg) 
 
-![Maintenance](https://img.shields.io/maintenance/yes/2019.svg)
+![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)
 
 [![Available on addons.mozilla.org](https://cdn-images-1.medium.com/max/1200/1*gbwMHf0PfoFJAPmL3L4Vrg.png)](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
 
@@ -39,7 +39,7 @@ From that webpage, press the bug button **Load Temporary Addon-On...** and choos
 
 ### Chrome/Chromium
 
-IDK the way to, but the plugin is working on it (because it's using the very raw functions of any browser If you want to complete that part, feel free to PR it 😉
+IDK the way to, but the plugin is working on it (because it's using the very raw functions of any browser If you want to complete that part, feel free to PR it /2020😉
 
 Also, as written above, the plugin is not (and will never be) on the chrome store because it doesn't respect [it's policy](https://developer.chrome.com/webstore/program_policies#content_policies)
 
@@ -53,10 +53,36 @@ Also, as written above, the plugin is not (and will never be) on the chrome stor
 
 ## How to use
 
+### Firefox addon button
+
 Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-Hub_ button, and Sci-Hub will pop up with your PDF on another tab 😀
+
+Before | After
+--- | ---
+![Before screen](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/before.jpg) | ![After screen](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/after.jpg)
+
+### Context Menu
+
+If you right clic on a link, you'll see in the contextual menu a line to open to location of that link in sci-hub.
+
+It's also possible to do the same by right clicking anywhere on the webpage. In that case it will open the current web page on sci-hub.
+
+Link | Page
+--- | ---
+![contextual link](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/link.jpg) | ![contextual page](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/page.jpg)
+
+<!-- A huge thanks to @Jackymancs4 for that awesome work ! :D -->
+
+### Options
+
+Also, from the version 2.0, you're now free to choose your how redirection. That way you're able to use a raw IP address, your own instance of [WhereIsSciHub](https://gitlab.com/Flockademic/whereisscihub), or whatever you want 😀
+
+![ASH option view](https://user-images.githubusercontent.com/6759913/73458392-7caa6d80-4375-11ea-96b9-a25a754c6707.png)
 
 ## Built With
 * [Where Is Sci-Hub Now ?](https://whereisscihub.now.sh/) - List several alternative working links to active Sci-Hub mirrors
+
+> FYI - The plugin currently use a fork fixed of the official WhereIsSciHub, _Vinni_ (the author of that tool) can't update his version now so I'm using [a fork](https://gitlab.com/Flockademic/whereisscihub/-/merge_requests/4) to have a working plugin ! :D 
 
 ## Authors
 
@@ -65,7 +91,7 @@ Go on scientific page with PDF hidden behind a paywall, click on the _Auto Sci-H
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GPL 3 License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
