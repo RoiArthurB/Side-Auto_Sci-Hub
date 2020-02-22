@@ -69,7 +69,7 @@ It's also possible to do the same by right clicking anywhere on the webpage. In 
 
 Link | Page
 --- | ---
-![contextual link](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/link.jpg) | ![contextual page](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/page.jpg)
+![contextual link](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/link.png) | ![contextual page](https://raw.githubusercontent.com/RoiArthurB/Side-Auto_Sci-Hub/master/ressources/page.png)
 
 <!-- A huge thanks to @Jackymancs4 for that awesome work ! :D -->
 
