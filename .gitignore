@@ -4,3 +4,4 @@ _config.yml
 .github/ISSUE_TEMPLATE/*
 
 rsc/
+*.zip
