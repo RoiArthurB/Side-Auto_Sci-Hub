@@ -5,13 +5,55 @@
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)
 
-[![Available on addons.mozilla.org](https://cdn-images-1.medium.com/max/1200/1*gbwMHf0PfoFJAPmL3L4Vrg.png)](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
+[~~Available on addons.mozilla.org~~](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
+
+> Don't respect Mozilla's rules 😒
+> <details><summary>View report mail</summary>
+> Dear contributor,
+>
+> We received a notification under Mozilla’s Digital Millennium Copyright Act (“DMCA”) and Trademark policy (https://www.mozilla.org/about/legal/report-infringement/) complaining of allegedly infringing activity by you on our service at https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub. We have removed or disabled access to your add-on identified by the claimant as infringing the claimant's trademark.
+>
+> The notice included the following report:
+>
+> From DeVore & DeMarco LLP:
+>
+> We are litigation counsel for Elsevier Inc., a leading publisher of scientific, engineering, and medical books and journals. Elsevier provides , among other things, the ScienceDirect platform, through which it distributes scientific journal articles in which it holds the copyright. In order to protect its copyright interest in those articles, Elsevier brought a civil action against a number of websites commonly known as "Sci-Hub" and "LibGen" or "Library Genesis" and their respective mirrors which engage in the large-scale infringement of those copyrights. On June 21, 2017, Elsevier obtained a judgement against those websites which, among other things, enjoined the websites, their operators, and anyone acting in concert with them, from infringing Elsevier' s copyrighted works or assisting others in doing so.
+>
+> We write to inform you of the presence of a number of add-ons for the Firefox web browser which are designed specifically to assist their users in infringing Elsevier 's (and other publisher') copyrights through the websites operated by the defendants in the above-mentioned civil action. We request that these extensions be removed from the Firefox Browser Add-Ons website (addons.mozilla.org) because they (1) violate the DMCA, including Section 1201 (circumvention of copyright protection systems); (2) operate in concert with the defendants in the above-mentioned civil action to violate Elsevier's copyrights in violation of the court 's order enjoining such conduct; and (3) are manifestly in violation of Mozilla's Conditions of Use (https://www.mozilla.om:/enUS/about/legal /acceptable-useD which expressly prohibit, among other things, illegal content and content which violates the copyright or other intellectual property rights of others. We therefore request that the following add-ons be promptly removed.
+> </details>
 
 [~~Available on chrome.google.com~~](https://chrome.google.com/webstore/detail/auto-sci-hub/nlogbpfgpkffmombiknfdoogphkimmmd/related?hl=en-US&authuser=0) 
 
 > Don't respect Google's rules 😒
 >
-> _We do not authorize products or services that facilitate unauthorized access to content on websites, such as circumventing paywalls or login restrictions._
+> <details><summary>View report mail</summary>
+> Dear developer,
+> 
+> Your Google Chrome item "Auto Sci-Hub" with the ID nlogbpfgpkffmombiknfdoogphkimmmd did not comply with our rules and has been removed from the Chrome Web Store.
+> 
+> Your item did not comply with the following section of our Program Rules :
+> 
+> "Content Rules"
+> 
+> * We do not authorize products or services that facilitate unauthorized access to the content of websites that bypass paywalls.
+> 
+> 
+> Once your item complies with the Chrome Web Store rules, you will be able to request that it be republished on the Chrome Web Store Developer Dashboard. Before publishing it again, we will check if it is compliant.
+> 
+> Please respond to this email if you have any questions about its content. The Chrome Web Store Developer Support team will contact you to follow up on your request.
+> 
+> 
+> Important Note :
+> 
+> Repeated or harmful non-compliance with the Chrome Web Store rules can lead to suspension of your developer account or banning from using the Chrome Web Store platform.
+> 
+> It may also lead to the suspension of related Google services associated with your Google Account.
+> 
+> 
+> Sincerely,
+> 
+> Chrome Web Store Developer Support
+> </details>
 
 ## Background
 
