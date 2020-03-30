@@ -8,6 +8,8 @@
 const SCIHUB_URL = 'ASH-baseUrl';
 const DEFAULT_SCIHUB_URL = 'https://whereisscihub.now.sh/go/';
 
+// Firefox always has both chrome and browser objects, Chrome has only chrome
+var browser = browser || chrome;
 let storage = browser.storage.local;
 let defaultUrlInput = document.getElementById("defaultUrl");
 defaultUrlInput.disabled = true;
@@ -17,7 +19,7 @@ let config = {};
 
 config[SCIHUB_URL] = DEFAULT_SCIHUB_URL;
 
-storage.get(config).then(function(config) {
+storage.get(config, function (config) {
   defaultUrlInput.value = config[SCIHUB_URL];
   last_url = config[SCIHUB_URL];
   defaultUrlInput.disabled = false;
