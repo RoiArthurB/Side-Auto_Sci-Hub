@@ -63,7 +63,7 @@ So I've created a very simple button addon for [Mozilla Firefox](https://www.moz
 
 ## Installing
 
-This part will explain you how to load the plugin in developper mode. I would recommand you to prefer installing the plugin from the official stores (with links above).
+This part will explain you how to load the plugin in developer mode.
 
 ### Firefox
 
@@ -81,7 +81,12 @@ From that webpage, press the bug button **Load Temporary Addon-On...** and choos
 
 ### Chrome/Chromium
 
-IDK the way to, but the plugin is working on it (because it's using the very raw functions of any browser If you want to complete that part, feel free to PR it /2020😉
+1. Download and extract the latest zip from https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases
+2. Delete \_config.yml from the folder (Chrome doesn't like reading files starting with \_ for some reason but this file is for [the GitHub Pages site](https://roiarthurb.github.io/Side-Auto_Sci-Hub/) so removing it isn't an issue)
+3. Go to Chrome's extensions page, enable Developer Mode
+4. Click Load unpacked, and select the extracted zip folder.
+
+You'll also need to right click the Open in Sci Hub toolbar icon now, click Options, then change the URL to another Sci-Hub mirror because whereisscihub.now.sh is down.
 
 Also, as written above, the plugin is not (and will never be) on the chrome store because it doesn't respect [it's policy](https://developer.chrome.com/webstore/program_policies#content_policies)
 
@@ -105,7 +110,7 @@ Before | After
 
 ### Context Menu
 
-If you right clic on a link, you'll see in the contextual menu a line to open to location of that link in sci-hub.
+If you right click on a link, you'll see in the contextual menu a line to open to location of that link in sci-hub.
 
 It's also possible to do the same by right clicking anywhere on the webpage. In that case it will open the current web page on sci-hub.
 
