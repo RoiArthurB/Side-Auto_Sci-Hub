@@ -19,5 +19,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           cmd: lint
-          source: ${{ GITHUB_WORKSPACE }}
+          source: $GITHUB_WORKSPACE
           channel: listed
