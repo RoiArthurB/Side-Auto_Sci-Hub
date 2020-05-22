@@ -4,7 +4,7 @@
 
 // Prepare default value in case no new has been saved
 const STORAGE_KEY = "ASH-baseUrl";
-const DEFAULT_URL = "https://whereisscihub.now.sh/go/";
+const DEFAULT_URL = "https://whereisscihub-15390rb7o.now.sh/go/";
 let config = {};
 config[STORAGE_KEY] = DEFAULT_URL;
 
