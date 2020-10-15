@@ -55,6 +55,10 @@
 > Chrome Web Store Developer Support
 > </details>
 
+[Available at Github release (for manual install)](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases/latest)
+
+> I'll try to quickly work to have a auto-upgrade/install process with Github packages, stay tune 😉
+
 ## Background
 
 I was tired to copy the URL of pages to paste it in [Sci-Hub](https://en.wikipedia.org/wiki/Sci-Hub) website 100 times per hours while I was reading scientific papers. 
@@ -134,7 +138,11 @@ Also, from the version 2.0, you're now free to choose your how redirection. That
 ## Authors
 
 * **Arthur Brugiere** - *Initial work* - [RoiArthurB](https://github.com/RoiArthurB)
+
+## Contribution
+
 * **Giacomo Rossetto** - *Upgraded almost everything* - [Jackymancs4](https://github.com/Jackymancs4)
+* **clef** - *Helped for the Firefox signing release* - [Clef-0](https://github.com/Clef-0)
 
 ## License
 
