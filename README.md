@@ -129,7 +129,11 @@ Also, from the version 2.0, you're now free to choose your how redirection. That
 ## Authors
 
 * **Arthur Brugiere** - *Initial work* - [RoiArthurB](https://github.com/RoiArthurB)
+
+## Contribution
+
 * **Giacomo Rossetto** - *Upgraded almost everything* - [Jackymancs4](https://github.com/Jackymancs4)
+* **clef** - *Helped for the Firefox signing release* - [Clef-0](https://github.com/Clef-0)
 
 ## License
 
