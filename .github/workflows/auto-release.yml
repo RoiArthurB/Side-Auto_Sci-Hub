@@ -17,14 +17,14 @@ jobs:
 
       - name: "web-ext build"
         id: web-ext-build
-        uses: kewisch/action-web-ext@v1
+        uses: kewisch/action-web-ext@master
         with:
           cmd: build
           source: ./
 
       - name: "web-ext sign"
         id: web-ext-sign
-        uses: kewisch/action-web-ext@v1
+        uses: kewisch/action-web-ext@master
         with:
           cmd: sign
           source: ${{ steps.web-ext-build.outputs.target }}
