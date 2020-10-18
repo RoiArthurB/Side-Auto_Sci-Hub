@@ -40,4 +40,6 @@ jobs:
           automatic_release_tag: "latest"
           prerelease: true
           title: "Development Build"
-          files: ${{ steps.web-ext-sign.outputs.target }}
+          files: |
+            ${{ steps.web-ext-build.outputs.target }}
+            ${{ steps.web-ext-sign.outputs.target }}
