@@ -35,5 +35,10 @@
           "38": "icons/icon-38.png"
       },
       "default_title": "Open in Sci-hub"
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "{be4c6348-e64f-4ff9-9e48-47468de8aa64}"
+      }
     }
 }
