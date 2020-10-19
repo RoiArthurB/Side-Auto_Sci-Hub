@@ -55,9 +55,9 @@
 > Chrome Web Store Developer Support
 > </details>
 
-[Available at Github release (for manual install)](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases/latest)
+[Available on Github release](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases/latest)
 
-> I'll try to quickly work to have a auto-upgrade/install process with Github packages, stay tune 😉
+> Check the doc (quick link [here](https://roiarthurb.github.io/Side-Auto_Sci-Hub/#installing)) to see how to simply install on your browser 🐻
 
 ## Background
 
@@ -67,10 +67,38 @@ So I've created a very simple button addon for [Mozilla Firefox](https://www.moz
 
 ## Installing
 
-This part will explain you how to load the plugin in developer mode.
-
 ### Firefox
 
+<details>
+<summary>View contents</summary>
+
+1. Download the `.xpi` file from the [latest release](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases)
+1. Click the _Continue to install_ pop-up button
+1. Enjoy the plugin 🐻
+
+</details>
+  
+### Chrome/Chromium
+
+<details>
+<summary>View contents</summary>
+  
+1. Download the `.crx` file from the [latest release](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases)
+1. Open the [chrome://extensions/](chrome://extensions/) link
+1. Enable the `Developer Mode`
+1. Drag and drop the downloaded crx file in the browser window
+1. Click the _Add extension_ pop-up button
+1. Enjoy the plugin 🐻
+
+</details>
+
+### Zip developper install (hard mode)
+
+<details>
+<summary>View contents</summary>
+
+#### Firefox
+  
 <!-- https://blog.mozilla.org/addons/2015/12/23/loading-temporary-add-ons/ -->
 
 Open the debug page on the addon section
@@ -101,6 +129,8 @@ Also, as written above, the plugin is not (and will never be) on the chrome stor
 >    * __Facilitate unauthorized access to content on websites, such as circumventing paywalls or login restrictions__
 >    * Encourage, facilitate, or enable the unauthorized access, download, or streaming of copyrighted content or media
 >    * Mine cryptocurrency
+
+</details>
 
 ## How to use
 
@@ -152,6 +182,5 @@ This project is licensed under the GPL 3 License - see the [LICENSE.md](LICENSE.
 
 PS: If the plugin is not available on markets anymore, it must be due to the fact that it doesn't respect Market Policy, so build it from source (it's a very simple plugin based on JS API, so it should work on any browser version) and enjoy the plugin ! 😀😀
 
-PPS: If you love Sci-Hub too, support the project by sending a contribution to the Sci-Hub Bitcoin address: ***1K4t2vSBSS2xFjZ6PofYnbgZewjeqbG1TM***
+PPS: If you love Sci-Hub too, support the project by sending a contribution to the Sci-Hub Bitcoin address: ***12PCbUDS4ho7vgSccmixKTHmq9qL2mdSns*** (check if it hasn't changed before giving ;) )
 
-PPPS: If it's too complicated to install the plugin on Chrome/ium, consider switching to Firefox 🦊
