@@ -15,6 +15,12 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v1
 
+      - name: Upgrade
+        run: sudo apt-get update -y && sudo apt-get install sed -y
+
+      - name: Change version for continuous build
+        run: sed -i "/version/s/\",$/-${{ steps.vars.outputs.sha_short }}\",/" manifest.json
+
       - name: "web-ext build"
         id: web-ext-build
         uses: kewisch/action-web-ext@master
