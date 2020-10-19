@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Change version for continuous build
-        run: sed -i "/version/s/\",$/-$(echo $GITHUB_SHA | cut -c1-8)\",/" manifest.json
+        run: sed -i "/version/s/\",$/\.$(echo $GITHUB_SHA | cut -c1-8)\",/" manifest.json
 
       - name: "web-ext build"
         id: web-ext-build
@@ -25,7 +25,8 @@ jobs:
           cmd: build
           source: ./
 
-      - uses: cardinalby/webext-buildtools-chrome-crx-action@v2
+      - name: "chrome crx"
+        uses: cardinalby/webext-buildtools-chrome-crx-action@v2
         with:
           # zip file made at the packExtensionDir step
           zipFilePath: ${{ steps.web-ext-build.outputs.target }}
