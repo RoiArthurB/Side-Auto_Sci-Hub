@@ -25,6 +25,13 @@ jobs:
           cmd: build
           source: ./
 
+      - uses: cardinalby/webext-buildtools-chrome-crx-action@v2
+        with:
+          # zip file made at the packExtensionDir step
+          zipFilePath: ${{ steps.web-ext-build.outputs.target }}
+          crxFilePath: './auto_sci-hub.crx'
+          privateKey: ${{ secrets.CHROME_CRX_PRIVATE_KEY }}
+
       - name: "web-ext sign"
         id: web-ext-sign
         uses: kewisch/action-web-ext@v1
@@ -34,14 +41,7 @@ jobs:
           channel: unlisted
           apiKey: ${{ secrets.FIREFOX_API_KEY }}
           apiSecret: ${{ secrets.FIREFOX_API_SECRET }}
-          timeout: 900
-
-      - uses: cardinalby/webext-buildtools-chrome-crx-action@v2
-        with:
-          # zip file made at the packExtensionDir step
-          zipFilePath: ${{ steps.web-ext-build.outputs.target }}
-          crxFilePath: './auto_sci-hub.crx'
-          privateKey: ${{ secrets.CHROME_CRX_PRIVATE_KEY }}
+          timeout: 9000
 
       - name: Create Release
         uses: "marvinpinto/action-automatic-releases@latest"
