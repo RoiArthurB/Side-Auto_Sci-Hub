@@ -1,10 +1,9 @@
-name: AutoRelease
+name: Auto Release
 
 on:
   push:
     branches:
       - master
-  pull_request:
 
 jobs:
 
