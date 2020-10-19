@@ -15,22 +15,19 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v1
 
-      - name: Upgrade
-        run: sudo apt-get update -y && sudo apt-get install sed -y
-
       - name: Change version for continuous build
         run: sed -i "/version/s/\",$/-$(echo $GITHUB_SHA | cut -c1-8)\",/" manifest.json
 
       - name: "web-ext build"
         id: web-ext-build
-        uses: kewisch/action-web-ext@master
+        uses: kewisch/action-web-ext@v1
         with:
           cmd: build
           source: ./
 
       - name: "web-ext sign"
         id: web-ext-sign
-        uses: kewisch/action-web-ext@master
+        uses: kewisch/action-web-ext@v1
         with:
           cmd: sign
           source: ${{ steps.web-ext-build.outputs.target }}
@@ -38,6 +35,13 @@ jobs:
           apiKey: ${{ secrets.FIREFOX_API_KEY }}
           apiSecret: ${{ secrets.FIREFOX_API_SECRET }}
           timeout: 900000
+
+      - uses: cardinalby/webext-buildtools-chrome-crx-action@v2
+        with:
+          # zip file made at the packExtensionDir step
+          zipFilePath: ${{ steps.web-ext-build.outputs.target }}
+          crxFilePath: './auto_sci-hub.crx'
+          privateKey: ${{ secrets.CHROME_CRX_PRIVATE_KEY }}
 
       - name: Create Release
         uses: "marvinpinto/action-automatic-releases@latest"
@@ -48,4 +52,5 @@ jobs:
           title: "Development Build"
           files: |
             ${{ steps.web-ext-build.outputs.target }}
+            ./auto_sci-hub.crx
             ${{ steps.web-ext-sign.outputs.target }}
