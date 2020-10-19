@@ -15,8 +15,8 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v1
 
-      - name: Change version for continuous build
-        run: sed -i "/version/s/\",$/\.$(echo $GITHUB_SHA | cut -c1-8)\",/" manifest.json
+      #- name: Change version for continuous build
+      #  run: sed -i "/version/s/\",$/\.$(echo $GITHUB_SHA | cut -c1-8)\",/" manifest.json
 
       - name: "web-ext build"
         id: web-ext-build
