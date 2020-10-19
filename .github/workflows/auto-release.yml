@@ -19,7 +19,7 @@ jobs:
         run: sudo apt-get update -y && sudo apt-get install sed -y
 
       - name: Change version for continuous build
-        run: sed -i "/version/s/\",$/-${{ steps.vars.outputs.sha_short }}\",/" manifest.json
+        run: sed -i "/version/s/\",$/-$(echo $GITHUB_SHA | cut -c1-8)\",/" manifest.json
 
       - name: "web-ext build"
         id: web-ext-build
