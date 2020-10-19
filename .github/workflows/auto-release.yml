@@ -41,7 +41,7 @@ jobs:
           channel: unlisted
           apiKey: ${{ secrets.FIREFOX_API_KEY }}
           apiSecret: ${{ secrets.FIREFOX_API_SECRET }}
-          timeout: 90000
+          timeout: 900000
 
       - name: Create Release
         uses: "marvinpinto/action-automatic-releases@latest"
