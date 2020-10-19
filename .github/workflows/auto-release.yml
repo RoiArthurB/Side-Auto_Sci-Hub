@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Change version for continuous build
-        run: VERSION_NUM=$(git describe --abbrev=0 --tags `git rev-list --tags --max-count=2` | grep -o 'v.*') && sed -i "/version/s/\",$/\.$(git rev-list ${VERSION_NUM}..HEAD --count)\",/" manifest.json
+        run: VERSION_NUM=$(git tag | tail -n 1) && sed -i "/version/s/\",$/\.$(git rev-list ${VERSION_NUM}..HEAD --count)\",/" manifest.json
 
       - name: "web-ext build"
         id: web-ext-build
