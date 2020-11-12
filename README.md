@@ -96,7 +96,8 @@ So I've created a very simple button addon for [Mozilla Firefox](https://www.moz
 
 <details>
   <summary>View contents</summary>
-  <h4><a id="user-content-firefox-1" class="anchor" aria-hidden="true" href="#firefox-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Firefox</h4>
+  
+  <h4>Firefox</h4>
 
   <p>Open the debug page on the addon section</p>
   <pre><code>about:debugging#addons</code></pre>
@@ -104,7 +105,9 @@ So I've created a very simple button addon for [Mozilla Firefox](https://www.moz
     <p>Depending on your version of Firefox, this link may redirect you somewhere else. e.g. Ff 71 =&gt; <code>about:debugging#/runtime/this-firefox</code></p>
   </blockquote>
   <p>From that webpage, press the bug button <strong>Load Temporary Addon-On...</strong> and choose the <em>manifest.json</em>.</p>
-  <h3><a id="user-content-chromechromium-1" class="anchor" aria-hidden="true" href="#chromechromium-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Chrome/Chromium</h3>
+  
+  <h4>Chrome/Chromium</h4>
+  
   <ol>
     <li>Download and extract the latest zip from <a href="https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases">https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases</a></li>
     <li>Delete _config.yml from the folder (Chrome doesn't like reading files starting with _ for some reason but this file is for <a href="https://roiarthurb.github.io/Side-Auto_Sci-Hub/" rel="nofollow">the GitHub Pages site</a> so removing it isn't an issue)</li>
