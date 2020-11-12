@@ -70,66 +70,58 @@ So I've created a very simple button addon for [Mozilla Firefox](https://www.moz
 ### Firefox
 
 <details>
-<summary>View contents</summary>
-
-1. Download the `.xpi` file from the [latest release](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases)
-1. Click the _Continue to install_ pop-up button
-1. Enjoy the plugin 🐻
-
+  <summary>View contents</summary>
+  <ol>
+    <li>Download the <code>.xpi</code> file from the <a href="https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases">latest release</a></li>
+    <li>Click the <em>Continue to install</em> pop-up button</li>
+    <li>Enjoy the plugin <g-emoji class="g-emoji" alias="bear" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png"><img class="emoji" alt="bear" src="https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png" width="20" height="20"></g-emoji></li>
+  </ol>
 </details>
   
 ### Chrome/Chromium
 
 <details>
-<summary>View contents</summary>
-  
-1. Download the `.crx` file from the [latest release](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases)
-1. Open the [chrome://extensions/](chrome://extensions/) link
-1. Enable the `Developer Mode`
-1. Drag and drop the downloaded crx file in the browser window
-1. Click the _Add extension_ pop-up button
-1. Enjoy the plugin 🐻
-
+  <summary>View contents</summary>
+  <ol>
+    <li>Download the <code>.crx</code> file from the <a href="https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases">latest release</a></li>
+    <li>Open the chrome://extensions/ link</li>
+    <li>Enable the <code>Developer Mode</code></li>
+    <li>Drag and drop the downloaded crx file in the browser window</li>
+    <li>Click the <em>Add extension</em> pop-up button</li>
+    <li>Enjoy the plugin <g-emoji class="g-emoji" alias="bear" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png"><img class="emoji" alt="bear" src="https://github.githubassets.com/images/icons/emoji/unicode/1f43b.png" width="20" height="20"></g-emoji></li>
+  </ol>
 </details>
 
 ### Zip developper install (hard mode)
 
 <details>
-<summary>View contents</summary>
+  <summary>View contents</summary>
+  <h4><a id="user-content-firefox-1" class="anchor" aria-hidden="true" href="#firefox-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Firefox</h4>
 
-#### Firefox
-  
-<!-- https://blog.mozilla.org/addons/2015/12/23/loading-temporary-add-ons/ -->
-
-Open the debug page on the addon section
-
-```
-about:debugging#addons
-``` 
-
-> Depending on your version of Firefox, this link may redirect you somewhere else. e.g. Ff 71 => `about:debugging#/runtime/this-firefox`
-
-From that webpage, press the bug button **Load Temporary Addon-On...** and choose the _manifest.json_.
-
-### Chrome/Chromium
-
-1. Download and extract the latest zip from https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases
-2. Delete \_config.yml from the folder (Chrome doesn't like reading files starting with \_ for some reason but this file is for [the GitHub Pages site](https://roiarthurb.github.io/Side-Auto_Sci-Hub/) so removing it isn't an issue)
-3. Go to Chrome's extensions page, enable Developer Mode
-4. Click Load unpacked, and select the extracted zip folder.
-
-You'll also need to right click the Open in Sci Hub toolbar icon now, click Options, then change the URL to another Sci-Hub mirror because whereisscihub.now.sh is down.
-
-Also, as written above, the plugin is not (and will never be) on the chrome store because it doesn't respect [it's policy](https://developer.chrome.com/webstore/program_policies#content_policies)
-
-> Prohibited Products:
->
->   We don't allow products or services that:
->
->    * __Facilitate unauthorized access to content on websites, such as circumventing paywalls or login restrictions__
->    * Encourage, facilitate, or enable the unauthorized access, download, or streaming of copyrighted content or media
->    * Mine cryptocurrency
-
+  <p>Open the debug page on the addon section</p>
+  <pre><code>about:debugging#addons</code></pre>
+  <blockquote>
+    <p>Depending on your version of Firefox, this link may redirect you somewhere else. e.g. Ff 71 =&gt; <code>about:debugging#/runtime/this-firefox</code></p>
+  </blockquote>
+  <p>From that webpage, press the bug button <strong>Load Temporary Addon-On...</strong> and choose the <em>manifest.json</em>.</p>
+  <h3><a id="user-content-chromechromium-1" class="anchor" aria-hidden="true" href="#chromechromium-1"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Chrome/Chromium</h3>
+  <ol>
+    <li>Download and extract the latest zip from <a href="https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases">https://github.com/RoiArthurB/Side-Auto_Sci-Hub/releases</a></li>
+    <li>Delete _config.yml from the folder (Chrome doesn't like reading files starting with _ for some reason but this file is for <a href="https://roiarthurb.github.io/Side-Auto_Sci-Hub/" rel="nofollow">the GitHub Pages site</a> so removing it isn't an issue)</li>
+    <li>Go to Chrome's extensions page, enable Developer Mode</li>
+    <li>Click Load unpacked, and select the extracted zip folder.</li>
+  </ol>
+  <p>You'll also need to right click the Open in Sci Hub toolbar icon now, click Options, then change the URL to another Sci-Hub mirror because whereisscihub.now.sh is down.</p>
+  <p>Also, as written above, the plugin is not (and will never be) on the chrome store because it doesn't respect <a href="https://developer.chrome.com/webstore/program_policies#content_policies" rel="nofollow">it's policy</a></p>
+  <blockquote>
+    <p>Prohibited Products:</p>
+    <p>We don't allow products or services that:</p>
+    <ul>
+      <li><strong>Facilitate unauthorized access to content on websites, such as circumventing paywalls or login restrictions</strong></li>
+      <li>Encourage, facilitate, or enable the unauthorized access, download, or streaming of copyrighted content or media</li>
+      <li>Mine cryptocurrency</li>
+    </ul>
+  </blockquote>
 </details>
 
 ## How to use
