@@ -46,8 +46,8 @@
     "commands": {
       "_execute_browser_action": {
         "suggested_key": {
-          "default": "Ctrl+Shift+U",
-          "mac": "Command+Shift+Y"
+          "default": "Ctrl+Shift+L",
+          "mac": "Command+Shift+L"
         },
         "description": "Open current page on Sci-Hub"
       }
