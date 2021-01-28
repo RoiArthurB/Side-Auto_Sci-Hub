@@ -40,5 +40,14 @@
       "gecko": {
         "id": "AutoSci-hub@github.com"
       }
+    },
+    "commands": {
+      "_execute_browser_action": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+U",
+          "mac": "Command+Shift+Y"
+        },
+        "description": "Open current page on Sci-Hub"
+      }
     }
 }
