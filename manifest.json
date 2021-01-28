@@ -1,9 +1,11 @@
 {
     "manifest_version":2,
     "name": "Auto Sci-Hub",
-    "version": "2.2",
+    "version": "2.3",
 
     "description": "Auto-modify the url to load Sci-Hub page with your article",
+    "author": "RoiArthurB",
+    "homepage_url": "https://github.com/RoiArthurB/Side-Auto_Sci-Hub",
 
     "permissions": [
         "activeTab",
