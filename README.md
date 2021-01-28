@@ -2,8 +2,9 @@
 
 [![Language](https://img.shields.io/badge/language-JavaScript-brightgreen.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ![GitHub](https://img.shields.io/github/license/RoiArthurB/Side-Auto_Sci-Hub.svg) 
+![Auto Release](https://github.com/RoiArthurB/Side-Auto_Sci-Hub/workflows/Auto%20Release/badge.svg)
 
-![Maintenance](https://img.shields.io/maintenance/yes/2020.svg)
+![Maintenance](https://img.shields.io/maintenance/yes/2021.svg)
 
 [~~Available on addons.mozilla.org~~](https://addons.mozilla.org/en-US/firefox/addon/auto-sci-hub/)
 
